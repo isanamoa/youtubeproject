@@ -1,0 +1,838 @@
+.header {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    display: flex;
+    z-index: 1000;
+    align-items: stretch;  
+    background-color: #fff;      
+    padding-left: 5px;
+    
+}
+
+.head-title {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.head-title>div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.youbar {
+    color: gray;
+    width: 25px;
+}
+.you {
+    width: 25px;
+}
+.your {
+    width: 85%;
+}
+.youbrand {
+    width: 90px;
+}
+.youname {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.yough {
+    position: fixed;
+    top: 10px;
+    left: 165px;
+    font-size: 10px;
+}
+
+.head-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+.head-foot {
+    flex:1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+}
+.head-body-part1 {
+    width: 85%;
+    margin-right: 1%;
+    display: none;
+}
+.hidesearch {
+    margin-left: 40px;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.hidesearch:hover {
+    background-color: lightgray;
+    opacity: 0.4;
+}
+.head-body form{
+    display: flex;
+    padding: 0px;
+}
+input[type="search"] {
+    margin: 20px 0px 0px 40px;
+    padding: 7px 8px;
+    border: 1px solid lightgray;        
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 100%;
+}
+input[type="search"]::placeholder {
+    color: #bbbbbbfc;
+    
+}
+.searchbtn {
+    padding: 7px 10px 7px 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin: 20px 0px 0px 0px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+
+} 
+.searchbtn:hover {
+    background-color: lightgray;
+    opacity: 0.4;
+}
+.mic {
+    border-radius: 50%;
+    padding: 5px;
+
+}
+.mic:hover {
+    background-color: lightgray;
+    opacity: 0.4;
+}
+.mic, .btnsettings{
+    border: none; 
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+.btnsettings {
+    margin: 0px 5px 0px 5px;
+    
+}
+.btnUser{
+    display: block;
+    border-radius: 50%;
+    padding: 7px 14px 7px 14px;
+    margin-right: 13%;
+    margin-left: 20px;
+    font-weight: bold;
+    background-color: #5858c6;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.younote {
+    position: relative;
+}
+.younoti {
+    position: absolute;
+    top: 5px;
+    right: -2px;
+    color: #fff;
+    background-color: rgb(194, 27, 27);
+    padding: 2px 4px 2px 3px;
+    border-radius: 30%;
+    font-weight: bold;
+    font-size: 11px;
+}
+.btnheaduser {
+    border-radius: 15px;
+    color: #5858c6;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 10px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    display: none;
+
+}
+.btnheaduser:hover {
+    background-color: #87bfe2;
+    opacity: 0.8;
+}
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    bottom: 0px;
+    width: 200px;
+    padding-right: 10px;
+    padding-left: 5px;
+    flex-flow: column;
+    display: none;
+}
+.sidebar>div {
+    padding: 15px 0 5px 15px;
+}
+.sidebar a {
+    display: flex;
+    flex-flow: row;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+}
+.sidebar a:hover {
+    background-color: rgb(240, 238, 238);
+}
+.abac {
+    background-color: rgb(240, 238, 238);
+}
+.youdv {
+    display: none;
+}
+.link-icon, .link-text {
+    padding: 5px 16px 3px 6px;
+}
+.i-border {
+    border: 1px solid #000;
+    padding: 3px;
+}
+.sidebar p, .sidebar button {
+    margin: 0px 0px 10px 15px;
+}
+
+.sidebar button>div, .header button>div {
+    display: inline-block;
+    padding: 5px; 
+}
+.ellipse {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+.sidebar hr {
+    background-color: lightgray;
+    opacity: 0.4;
+    color: lightgray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+body {
+    margin-top: 25%;
+    margin-left: 0%;
+    
+}
+.contents{
+    top: 55px;
+    left: 20px;   
+}
+
+.iron-cont {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    background-color: white;
+    top: 50px;
+    left: 0px;    
+}
+/*
+.iron-cont:hover {
+    overflow-x: scroll;
+    scroll-behavior: auto;
+}
+*/
+.drawers {
+    display:  inline-flex;
+    flex-flow: row nowrap;
+    margin-left: 40px;
+}
+.drawers>div {
+    padding: 8px;
+    margin: 0px 5px 5px 5px;
+    border-radius: 10px;
+    background-color: rgba(249, 247, 247, 0.837);
+    width: auto;  
+}
+.drawers>div:hover {
+    background-color: rgba(249, 247, 247, 0.837);
+}
+.drawers>div:first-child{
+    background-color: #000;
+    color: #fff;
+}
+.arr {
+    position: fixed;
+    display: block;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.drawers + .arr:hover {
+    display: block;
+}
+.arr-right{
+    right: 0px;
+    padding-left: 10px;
+    padding-right: 30px;
+    opacity: 1;
+}
+.arr-button {
+    padding: 13px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #000;
+}
+.arr-button:hover {
+    background-color: lightgray;
+    opacity: 0.5;
+}
+
+.main{
+    position: relative;
+    display: flex; 
+    flex-flow: row wrap;  
+    z-index: -1;
+}
+.video-preview {
+    width: 80%;
+    margin: 10px 10px 15px 10px;
+    padding: 0px 10% 0px 10%;
+}
+
+.video-preview ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.video-preview ul li {
+    padding: 5px;
+    margin:  0px;
+}
+.video-preview ul li p {
+    padding-bottom: 5px;
+    margin:  0px;
+}
+.video-preview ul li p span{
+    display: block;
+    color: #555;
+    font-size: 14px;
+}
+.vid-content{
+    position: relative;
+    margin-bottom: 5px;
+
+}
+.img-preview {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    height: 180px;
+}
+.img-time {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.vid-info {
+    background-color: transparent;
+}
+.author-img {
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+}
+.infopa {
+    width: 10%;
+
+}
+.infotitle {
+    width: 90%;
+}
+.p-title {
+    font-weight: bold;
+}
+.p-body {
+    font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    height: 30px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 25px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: darkgray white;
+    scroll-margin: 10px;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .younoti {
+        position: absolute;
+        top: 5px;
+        right: -2px;
+    }
+    .ellipse {
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap;
+    }
+    .youdv {
+        display: none;
+    }
+    .video-preview {
+        width: 45%;
+        margin: 10px;
+        padding: 0px 0px 0px 0px;
+    }
+    .img-preview {
+        height: 140px;
+    }
+    .infopa {
+        width: 15%;
+    
+    }
+    .infotitle {
+        width: 85%;
+    }
+    
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .head-body-part1 {
+        width: 85%;
+        margin-right: 1%;
+        display: block;
+    }
+    .hidesearch{
+        display: none;
+    }
+    .younote {
+        position: relative;
+    }
+    .younoti {
+        position: absolute;
+        top: 5px;
+        right: -2px;
+    }
+    .sidebar {
+        position: fixed;
+        left: 5px;
+        top: 55px;
+        bottom: 0px;
+        width: 55px;
+        font-size: 0.8rem;
+        display: block;
+    }
+    .sidebar a {
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        padding: 2px;
+        background-color: transparent;
+    }
+    .ellipse {
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap;
+    }
+    .youdv {
+        display: none;
+    }
+    body {
+        margin-top: 15%;
+        margin-left: 12%;
+        
+    }
+    .iron-cont {
+        left: 100px
+    }
+    .video-preview {
+        width: 30%;
+        margin-top:25px;
+        margin-bottom: 40px;
+    }
+    .img-preview {
+        height: 140px;
+    }
+    .infopa {
+        width: 15%;
+    
+    }
+    .infotitle {
+        width: 85%;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .head-body-part1 {
+        width: 85%;
+        margin-right: 1%;
+        display: block;
+    }
+    .hidesearch{
+        display: none;
+    }
+    .younote {
+        position: relative;
+    }
+    .younoti {
+        position: absolute;
+        top: 5px;
+        right: -2px;
+    }
+    .sidebar {
+        position: fixed;
+        left: 5px;
+        top: 55px;
+        bottom: 0px;
+        width: 55px;
+        font-size: 0.8rem;
+        display: block;
+    }
+    
+    .ellipse {
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap;
+    }
+    /*
+    .sidebar:hover {
+        overflow: scroll;
+    }*/
+    .youdv {
+        display: none;
+    }
+    body {
+        margin-top: 13%;
+        margin-left: 12%;
+        
+    }
+    .video-preview {
+        width: 30%;
+        margin-top:25px;
+        margin-bottom: 40px;
+    }
+    .img-preview {
+        height: 150px;
+    }
+    .infopa {
+        width: 20%;
+    
+    }
+    .infotitle {
+        width: 80%;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .header {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        height: 50px;
+        display: flex;
+        align-items: stretch;  
+        background-color: #fff;          
+    }
+    
+    .head-title {
+        flex: 1;
+    }
+    .head-body {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .head-foot {
+        flex:1;
+    }
+    .head-body-part1 {
+        width: 85%;
+        margin-right: 1%;
+        display: block;
+    }
+    .hidesearch{
+        display: none;
+    }
+    .head-body form{
+        display: flex;
+        padding: 0px;
+    }
+    input[type="search"] {
+        margin: 20px 0px 0px 40px;
+        padding: 7px 8px;
+        border: 1px solid lightgray;        
+        align-items: center;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        font-size: 0.9rem;
+        padding: 10px;
+        width: 100%;
+    
+    }
+    
+    input[type="search"]::placeholder {
+        color: #bbbbbbfc;
+        
+    }
+    .searchbtn {
+        padding: 7px 20px 7px 20px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin: 20px 0px 0px 0px;
+        background-color: #fff;
+        border: 1px solid lightgray;
+    
+    } 
+    .searchbtn:hover {
+        background-color: lightgray;
+        opacity: 0.4;
+    }
+    
+    .mic {
+        border-radius: 50%;
+        padding: 10px;
+    
+    }
+    .mic:hover {
+        background-color: lightgray;
+        opacity: 0.4;
+    }
+    .mic, .btnsettings{
+        border: none; 
+        background-color: transparent;
+        font-size: 1.2rem;
+    
+    }
+    
+    .btnsettings {
+        margin: 0px 5px 0px 10px;
+        
+    }
+    .younote {
+        position: relative;
+    }
+    .younoti {
+        position: absolute;
+        top: 9px;
+        right: 3px;
+    }
+    .btnheaduser {
+        border-radius: 15px;
+        color: #5858c6;
+        font-weight: bold;
+        padding-left: 8px;
+        padding-right: 10px;
+        margin-right: 40px;
+        background-color: transparent;
+        border: 1px solid lightgray;
+    }
+    .btnheaduser:hover {
+        background-color: #87bfe2;
+        opacity: 0.8;
+    }
+    .sidebar {
+        position: fixed;
+        left: 0px;
+        top: 50px;
+        bottom: 0px;
+        width: 200px;
+        padding-right: 10px;
+        flex-flow: column;
+        display: block;
+        font-size: 1rem;
+    }
+    .sidebar:hover {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .sidebar>div {
+        padding: 15px 0 5px 15px;
+    }
+    .sidebar a {
+        display: flex;
+        flex-flow: row;
+        text-decoration: none;
+        color: #000;
+    }
+    .ellipse {
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap;
+    }
+    .youdv {
+        display: block;
+    }
+    
+    .i-border {
+        border: 1px solid #000;
+        padding: 3px;
+    }
+    .sidebar p, .sidebar button {
+        margin: 0px 0px 10px 15px;
+    }
+    
+    .sidebar button>div, .header button>div {
+        display: inline-block;
+        padding: 5px; 
+    }
+    .sidebar hr {
+        background-color: lightgray;
+        opacity: 0.4;
+        color: lightgray;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    body {
+        margin-top: 8%;
+        margin-left: 225px;
+        overflow: visible;
+    }
+    .contents{
+        top: 55px;
+        left: 20px;   
+    }
+    
+    .iron-cont {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        white-space: nowrap;
+        background-color: white;
+        top: 50px;
+        left: 225px;    
+    }
+    /*
+    .iron-cont:hover {
+        overflow-x: scroll;
+        scroll-behavior: auto;
+    }
+    */
+    .drawers {
+        display:  inline-flex;
+        flex-flow: row nowrap;
+        margin-left: 40px;
+    }
+    .drawers>div {
+        padding: 8px;
+        margin: 0px 5px 5px 5px;
+        border-radius: 10px;
+        background-color: rgb(249, 247, 247);
+        width: auto;  
+    }
+    .drawers>div:hover {
+        background-color: rgb(241, 230, 230);
+    }
+    .arr {
+        position: fixed;
+        display: block;
+        font-weight: bold;
+        background-color: rgb(255, 255, 255);
+    }
+    .drawers + .arr:hover {
+        display: block;
+    }
+    .arr-right{
+        right: 0px;
+        padding-left: 10px;
+        padding-right: 30px;
+        opacity: 1;
+    }
+    .arr-button {
+        padding: 13px;
+        border: none;
+        background-color: transparent;
+        border-radius: 50%;
+    
+    }
+    .arr-button:hover {
+        background-color: lightgray;
+        opacity: 0.5;
+    }
+    .main{
+        position: relative;
+        display: flex; 
+        flex-flow: row wrap;  
+        z-index: -1;
+    }
+    .video-preview {
+        width: 23%;
+        margin-top:25px;
+        margin-bottom: 40px;
+    }
+    .video-preview ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .video-preview ul li {
+        padding: 5px;
+        margin:  0px;
+    }
+    .img-preview {
+        width: 100%;
+        border-radius: 15px;
+        border: 1px solid lightgray;
+        height: 150px;
+    }
+    .infopa {
+        width: 15%;
+    
+    }
+    .infotitle {
+        width: 85%;
+    }
+ }

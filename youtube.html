@@ -1,0 +1,922 @@
+<!-- 
+    Static Web App designed in fulfilment of 
+    HTML & CSS Course as final project by Azubi Africa
+    3rd February, 2023 - 9th February, 2023.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Isaac Amoah" />
+        <meta name="description" content="Final Project - YouTube Clone"/>
+        <title>YouTube Clone - Final Project</title>
+        <link rel="icon" type="image/x-icon" href="youtube.png" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css /" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        <script src="https://kit.fontawesome.com/edc08da3a3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/youtube.css" />
+    
+    </head>
+
+    <body>
+        <!-- Header content-->
+        <div class="header">
+            <div class="head-title">
+                <div class="youbar">
+                    <img src="icons/hamburger-menu.svg" alt="Menubar" />
+                </div>
+                <div class="youbrand youname" title="YouTube Home">
+                    <img src="icons/youtube-logo.svg" alt="YouTube Logo" />                    
+                    <div class="yough">
+                        GH
+                    </div>
+                </div>      
+            </div>
+            <div class="head-body">
+                
+                <div class="head-body-part1">
+                    <form method="POST">
+                        <input type="search" name="item_search" id="item_search"
+                        placeholder="Search" />
+                        <button title="Search you" class="searchbtn">
+                            <img class="you" src="icons/search.svg" alt="Search" />
+                        </button>
+                    </form>
+                </div>
+                <button class="hidesearch">
+                    <img class="you" src="icons/search.svg" alt="Search" />
+                </button>
+                <div>
+                    <button type="button" title="Search with your voice" class="mic">
+                        <img class="you" src="icons/voice-search-icon.svg" alt="Voice Search" />
+                    </button>
+                </div>
+                
+            </div>
+            <div class="head-foot">
+                <button type="button" class="mic" title="Create" class="btnsettings">
+                    <img class="you" src="icons/upload.svg" alt="Music" />
+                </button> 
+                <div class="younote ">
+                    <button type="button" class="mic" title="Notifications" class="btnsettings">
+                        <img class="you" src="icons/notifications.svg" alt="Notifications" />
+                    </button>  
+                    <div class="younoti">
+                        9+
+                    </div>
+                </div>
+                <button type="button" class="btnUser hod">
+                    I  
+                </button>
+                <button type="button" class="btnheaduser" title="Sign in">
+                    <div > 
+                        <i class="fas fa-user-circle fa-fw" aria-hidden="true"></i> 
+                    </div>  
+                    <div> Sign in </div>    
+                </button>
+            </div>
+            
+        </div>
+
+        <!-- Sidebar content-->
+        <div class="sidebar">
+            <div>
+                <a class="abac" href="" title="Home">
+                    <div class="link-icon you"> 
+                        <img src="icons/home.svg" alt="Notifications" />
+                    </div>  
+                    <div title="Home" class="link-text"> Home </div>    
+                </a>
+                <a href="" title="Shorts">
+                    <div class="link-icon you"> 
+                        <img src="icons/shorts.PNG" alt="Shorts" />
+                    </div>  
+                    <div class="link-text"> Shorts </div>    
+                </a>
+                <a href="" title="Subscriptions">
+                    <div class="link-icon you"> 
+                        <img src="icons/subscriptions.svg" alt="Subscriptions" />
+                    </div>  
+                    <div class="link-text"> Subscriptions </div>    
+                </a>
+            </div>
+    
+            <hr class="youdv"/>
+    
+            <div>
+                <a href="" title="Library">
+                    <div class="link-icon you"> 
+                        <img src="icons/library.svg" alt="Library" />
+                    </div>  
+                    <div class="link-text"> Library </div>    
+                </a>
+                
+            </div>
+            <div class="youdv">
+                <a href="" title="Library">
+                    <div class="link-icon you"> 
+                        <img src="icons/library.svg" alt="Library" />
+                    </div>  
+                    <div class="link-text"> Library </div>    
+                </a>
+                <a  href="" title="History">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/history.PNG" alt="History" />
+                    </div>  
+                    <div class="link-text"> History </div>    
+                </a>
+                <a  href="" title="Watch Later">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/youwatchlater.PNG" alt="History"  />
+                    </div>  
+                    <div class="link-text"> Watch Later </div>    
+                </a>
+                <a  href="" title="Free Excel POWER Query Course">
+                    <div class="link-icon you"> 
+                        <img class="you" src="icons/youfreeexcel.PNG" alt="History" />
+                    </div>  
+                    <div class="link-text ellipse"> Free Excel POWER Query Course </div>    
+                </a>
+                <a  href="" title="Liked Videos">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/youlike.PNG" alt="History" />
+                    </div>  
+                    <div class="link-text"> Liked Videos </div>    
+                </a>
+            </div>
+            <!--
+                <hr class="youdv"/>
+                <div class="youdv">
+                    <p>Sign in to like videos, comments, and subscribe.</p>
+                    <button class="btnheaduser">
+                        <div > <i class="fas fa-user-circle fa-fw" aria-hidden="true"></i> </div>  
+                        <div> Sign in </div>    
+                    </button>
+                    
+                </div>
+                <hr class="youdv"/>
+                <div class="youdv">
+                    <a href="">
+                        <div class="link-icon"> <i class="far fa-plus-circle"></i> </div>  
+                        <div class="link-text"> Browse channels </div>    
+                    </a>
+                    
+                </div>
+            -->
+            <hr class="youdv"/>
+            <div class="youdv">
+                <p>Explore</p>
+                <a href="" title="Trending">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/trending.PNG" alt="Trending" />
+                    </div>  
+                    <div class="link-text"> Trending </div>    
+                </a>
+                <a href="" title="Music">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/music.PNG" alt="Music" />
+                    </div>  
+                    <div class="link-text"> Music </div>    
+                </a>
+                <a href="" title="Gaming">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/gaming.PNG" alt="Gaming" />
+                    </div>  
+                    <div class="link-text"> Gaming </div>    
+                </a>
+                <a href="" title="Sports">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/trophy.PNG" alt="Sports">
+                    </div>  
+                    <div class="link-text"> Sports </div>    
+                </a>
+                
+            </div>
+
+            <hr class="youdv"/>
+            <div class="youdv"> 
+                <p>More from Youtube</p>
+                <a href="" title="Creator Music">
+                    <div class="link-icon you" > 
+                        <img class="your" src="icons/youcreator.PNG" alt="Youtube Music" />
+                    </div>  
+                    <div class="link-text"> Creator Music </div>    
+                </a>
+                <a href="" title="YouTube Music">
+                    <div class="link-icon you" > 
+                        <img class="your" src="icons/youmusic.png" alt="Youtube Music" />
+                    </div>  
+                    <div class="link-text"> YouTube Music </div>    
+                </a>
+                <a href="" title="YouTube Kids">
+                    <div class="link-icon you">                             
+                        <img class="your" src="icons/youkids.PNG" alt="Kids" />
+                     </div>  
+                    <div class="link-text"> YouTube Kids </div>    
+                </a>
+                <a href="" title="YouTube TV">
+                    <div class="link-icon you"> 
+                        <img class="your" src="icons/youtubetv.PNG" alt="Tv" />
+                    </div>  
+                    <div class="link-text"> YouTube TV </div>    
+                </a>
+                
+            </div>
+    
+            <hr class="youdv"/> 
+            <div class="youdv">
+                <a href="" title="Settings">
+                    <div class="link-icon"> 
+                        <img class="your" src="icons/settings.PNG" alt="Settings" />
+                    </div>  
+                    <div class="link-text"> Settings </div>    
+                </a>
+                <a href="" title="Report history">
+                    <div class="link-icon"> 
+                        <img class="your" src="icons/flag.PNG" alt="Report" />
+                    </div>  
+                    <div class="link-text"> Report history </div>    
+                </a>
+                <a href="" class="Help">
+                    <div class="link-icon"> 
+                        <img class="your" src="icons/question.PNG" alt="Help" />
+                    </div>  
+                    <div class="link-text"> Help </div>    
+                </a>
+                <a href="" title="Send feedback">
+                    <div class="link-icon"> 
+                        <img class="your" src="icons/feedback.PNG" alt="Feedback" />
+                    </div>  
+                    <div class="link-text"> Send feedback </div>    
+                </a>
+                
+            </div>
+    
+            <hr class="youdv"/>
+            <div class="youdv">
+                <p>Youtube Clone</p>
+                <p>
+                    About Press Copyright <br/>
+                    Contact is Creators<br/>
+                    Advertise Developers
+                    
+                </p>
+                <p>
+                    Terms Privacy Policy & Safety <br/>
+                    How YouTube works <br/>
+                    Test new features           
+                 </p>
+    
+                 <p>&copy; Clone Google LLC</p>
+            </div>
+    
+        </div>
+        
+        <!-- Main content starts here-->
+        <div class="contents">
+            <div class="iron-cont">
+                <div class="drawers">
+                    <div role="button" title="All">All</div>
+                    <div role="button" title="Real Madrid">Real Madrid</div>
+                    <div role="button" title="Computer Programming">Computer Programming</div>
+                    <div role="button" title="Music">Music</div>
+                    <div role="button" title="Live">Live</div>
+                    <div role="button" title="Jenifa">Jenifa</div>
+                    <div role="button" title="he Hot 100">The Hot 100</div>
+                    <div role="button" title="Soft Rock">Soft Rock</div>
+                    <div role="button" title="Pivot table">Pivot table</div>
+                    <div role="button" title="Nollywood">Nollywood</div>
+                    <div role="button" title="Google Forms">Google Forms</div>
+                    <div role="button" title="Romantic comedies">Romantic comedies</div>
+                    <div role="button" title="Afrobeats">Afrobeats</div>
+                    <div role="button" title="Sports leagues">Sports leagues</div>
+                    <div role="button" title="Text">Text</div>
+                    <div role="button" title="Sales">Sales</div>
+                    <div role="button" title="Comtemporary Worship Music">Comtemporary Worship Music</div>
+                    <div role="button" title="Pop Rock">Pop Rock</div>
+                    <div role="button" title="African Music">African Music</div>
+                </div>
+                <div class="arr">
+                    <button class="arr-button" type="button">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                </div>
+                <div class="arr arr-right">
+                    <button class="arr-button" type="button">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="main">
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/sonnie-badu.jpg" alt="First Image" />
+                        <div class="img-time">7:45</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/sonnie.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">STILL YOUR REIGN - Sonnie Badu ft Annie Badu (Official Recording)</p> 
+                                <p class="p-body"> 
+                                    <span> Official Sonnie Badu TV</span>
+                                    <span>50K views &#x2022; 2 mins ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>              
+                    </div>     
+                </div>
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/rmbadge.png" alt="First Image" />
+                        <div class="img-time">10:05</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/new-berna.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Real Madrid Daily Training Sessions</p> 
+                                <p class="p-body"> 
+                                    <span> Real Madrid</span>
+                                    <span>50K views &#x2022; 30 mins ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>              
+                    </div>     
+                </div>
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/chatgpt.jpg" alt="First Image" />
+                        <div class="img-time">28:19</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/sonnie.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">CHAT GPT Tutorial for Developers -38 Ways to 10x your productivity</p> 
+                                <p class="p-body"> 
+                                    <span> Programming with Mosh</span>
+                                    <span>30K views &#x2022; 1 month ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>              
+                    </div>     
+                </div>
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/modric-legend.jpg" alt="First Image" />
+                        <div class="img-time">30:05</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Real Madrid | Luka Modric, Madrid's greatest Midfielder?</p> 
+                                <p class="p-body"> 
+                                    <span> RM Vibes</span>
+                                    <span>50K views &#x2022; 2 days ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>              
+                    </div>     
+                </div>
+
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/rmbadge.png" alt="First Image" />
+                        <div class="img-time">15:32</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/new-berna.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">History of Real Madrid | FC Real Madrid</p> 
+                                <p class="p-body"> 
+                                    <span>FC Real Madrid</span>
+                                    <span>200M views &#x2022; 11 years ago</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/sonnie-badu.jpg" alt="First Image" />
+                        <div class="img-time">7:45</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/sonnie.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">HYMNS REVIEW - Sonnie Badu (Official Recording)</p> 
+                                <p class="p-body"> 
+                                    <span> Official Sonnie Badu TV</span>
+                                    <span>10M views &#x2022; 5 years ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>              
+                    </div>     
+                </div>
+
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/new-berna.jpg" alt="First Image" />
+                        <div class="img-time">20:32</div> 
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/new-berna.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">The New Santiago Bernabeu | FC Real Madrid</p> 
+                                <p> 
+                                    <span>FC Real Madrid</span>
+                                    <span>35M views &#x2022; 6 years ago</span>
+                                </p>                
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                    
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/rm-ucl-2022.jpg" alt="First Image" />
+                        <div class="img-time">05:15</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">UCL 2022 - THE COME BACK KINGS | REAL MADRID</p> 
+                                <p class="p-body"> 
+                                    <span>RM Vibes</span>
+                                    <span>65M views &#x2022; 8 months ago</span>
+                                </p>                    
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                    
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/rm-winners.jpg" alt="First Image" />
+                        <div class="img-time">08:00</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Winners of 2022 Champions League | Real Madrid</p> 
+                                <p class="p-body"> 
+                                    <span>RM Vibes</span>
+                                    <span>15M views &#x2022; 9 months ago</span>
+                                </p>                     
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                   
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/midfield-dyna.jpg" alt="First Image" />
+                        <div class="img-time">30:10</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">The Legendary Midfield Trio | Real Madrid</p> 
+                                <p class="p-body"> 
+                                    <span>RM Vibes</span>
+                                    <span>100M views &#x2022; 1 year ago</span>
+                                </p>                     
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                  
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/benz.jpg" alt="First Image" />
+                        <div class="img-time">17:45</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/camavinga.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Ballon D'or 2022 Winner Karim Benzema | Special Moments</p> 
+                                <p class="p-body"> 
+                                    <span>Los Blanco News</span>
+                                    <span>40M views &#x2022; 5 months ago</span>
+                                </p>                    
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                     
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/crfive.jpg" alt="First Image" />
+                        <div class="img-time">15:32</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Highlights: Cristiano Ronaldo's moments</p> 
+                                <p class="p-body"> 
+                                    <span>Listener</span>
+                                    <span>135M views &#x2022; 3 years ago</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                        
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/rm-bosses.jpg" alt="First Image" />
+                        <div class="img-time">25:23</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/camavinga.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">The Legend of Don Carlo</p> 
+                                <p class="p-body"> 
+                                    <span>RM Vibes</span>
+                                    <span>20M views &#x2022; 10 hours ago</span>
+                                </p>                    
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>            
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/cou-best-keep.jpg" alt="First Image" />
+                        <div class="img-time">30:45</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Highlights: Courtouis journey to 2022 'THE BEST' Goalkeeper award</p> 
+                                <p class="p-body"> 
+                                    <span>RM Vibes</span>
+                                    <span>450K views &#x2022; 1 year ago</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/fede-love.jpg" alt="First Image" />
+                        <div class="img-time">10:32</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Federico Valverde | Real Madrid</p> 
+                                <p class="p-body"> 
+                                    <span>Yellow Star</span>
+                                    <span>200K views &#x2022; 2 years ago</span>
+                                </p>                   
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/vinijr-1.jpg" alt="First Image" />
+                        <div class="img-time">21:56</div>  
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Real Madrid Poster Boy</p> 
+                                <p class="p-body"> 
+                                    <span>Real Madrid 4 Life</span>
+                                    <span>235M views &#x2022; 2 years ago</span>
+                                </p>                    
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                    
+                    </div>
+                    
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/cama.jpg" alt="First Image" />
+                        <div class="img-time">19:24</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/camavinga.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Eduardo Camavinga - Sensational Performance</p> 
+                                <p class="p-body"> 
+                                    <span>Los Blanco News</span>
+                                    <span>15M views &#x2022; 3 months ago</span>
+                                </p>                    
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/rodry.jpg" alt="First Image" />
+                        <div class="img-time">15:32</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/bra-nigas.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Highlights: The Football Brain of Rodrygo Goes</p> 
+                                <p class="p-body"> 
+                                    <span>Madrid Sun</span>
+                                    <span>65M views &#x2022; 2 years ago</span>
+                                </p>                    
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>   
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/bra-nigas.jpg" alt="First Image" />
+                        <div class="img-time">09:52</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Real Madrid Brazilian Wonderkids</p> 
+                                <p class="p-body"> 
+                                    <span> Madrid Stories</span>
+                                    <span>25M views &#x2022; 3 years ago</span>
+                                </p>                     
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                     
+                    </div>                 
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/bra-nigas-1.jpg" alt="First Image" />
+                        <div class="img-time">20:08</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Los Blanco Wonderkids</p> 
+                                <p class="p-body"> 
+                                    <span> Madrid Stories</span>
+                                    <span>20M views &#x2022; 2 years ago</span>
+                                </p>                      
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                    
+                    </div>                
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/endr-future.jpg" alt="First Image" />
+                        <div class="img-time">06:35</div> 
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vinijr.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Real Madrid New Brazilian Wonderkid</p> 
+                                <p class="p-body"> 
+                                    <span> Madrid Stories</span>
+                                    <span>800K views &#x2022; 3 years ago</span>
+                                </p>                     
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                    
+                    </div>               
+                </div>
+    
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/marco.jpg" alt="First Image" />
+                        <div class="img-time">13:14</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/marco.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">How Marco Asensio won the hearts of Madridistas</p> 
+                                <p class="p-body"> 
+                                    <span> Los Blanco</span>
+                                    <span>25M views &#x2022; 3 years ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                    
+                    </div>                
+                </div>
+
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/vini-kill.jpg" alt="First Image" />
+                        <div class="img-time">15:14</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/vini-kill.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">LA LIGA Clubs Strategy to destroy Vini Jr</p> 
+                                <p class="p-body"> 
+                                    <span> Los Blanco News</span>
+                                    <span>25M views &#x2022; 4 days ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>                    
+                    </div>                
+                </div>
+                
+                <div class="video-preview">
+                    <div class="vid-content">
+                        <img class="img-preview" src="image/mern.jpg" alt="First Image" />
+                        <div class="img-time">7:45</div>
+                    </div>
+                    <div class="vid-info">
+                        <ul>
+                            <li class="infopa">
+                                <img src="image/mern.jpg" alt="Author Image" class="author-img"/>
+                            </li>
+                            <li class="infotitle">
+                                <p class="p-title">Learn the MERN Stack - Full Tutorial</p> 
+                                <p class="p-body"> 
+                                    <span> freeCodeCamp </span>
+                                    <span>2.9m views &#x2022; 3 years ago</span>
+                                </p>                       
+                            </li>
+                        </ul>
+                        <div style="display: none;">
+                            Watch later
+                            Save for later
+                        </div>              
+                    </div>     
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+</html>
